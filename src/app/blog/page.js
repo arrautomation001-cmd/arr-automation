@@ -548,7 +548,7 @@ export default function BlogPage() {
             Don't wait for the articles. Book a free 30-minute call
             and get direct answers to your startup's tech questions.
           </p>
-          <Link href="/contact" style={{
+          <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
             display: 'inline-block',
             backgroundColor: '#C8844A',
             color: '#FDF8F2',

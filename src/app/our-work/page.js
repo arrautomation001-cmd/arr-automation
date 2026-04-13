@@ -5,13 +5,6 @@ import Link from 'next/link'
 
 const projects = []
 
-const stats = [
-  { number: '10+', label: 'Projects delivered' },
-  { number: '4', label: 'Services offered' },
-  { number: '3', label: 'Countries served' },
-  { number: '100%', label: 'Client satisfaction' },
-]
-
 const categories = ['All', 'QA Auditing', 'Web Development', 'AI Automation', 'Email Marketing']
 
 export default function OurWorkPage() {
@@ -94,7 +87,7 @@ export default function OurWorkPage() {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Intro line */}
       <section style={{
         backgroundColor: '#ffffff',
         borderBottom: '1px solid #e8ddd4',
@@ -103,37 +96,30 @@ export default function OurWorkPage() {
         <div style={{
           maxWidth: '1100px',
           margin: '0 auto',
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '24px',
-        }} className="stats-grid">
-          {stats.map((stat, i) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              style={{ textAlign: 'center' }}
-            >
-              <p style={{
-                fontSize: '36px',
-                fontWeight: '700',
-                color: '#C8844A',
-                letterSpacing: '-1px',
-                margin: '0 0 6px',
-              }}>
-                {stat.number}
-              </p>
-              <p style={{
-                fontSize: '14px',
-                color: '#6b5a52',
-                margin: 0,
-              }}>
-                {stat.label}
-              </p>
-            </motion.div>
-          ))}
+          textAlign: 'center',
+        }}>
+          <p style={{
+            fontSize: '16px',
+            color: '#6b5a52',
+            lineHeight: '1.7',
+            maxWidth: '680px',
+            margin: '0 auto 24px',
+          }}>
+            We're just getting started — be our first case study. Book a free call and we'll walk you through our work directly.
+          </p>
+          <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
+            display: 'inline-block',
+            backgroundColor: '#C8844A',
+            color: '#FDF8F2',
+            padding: '12px 28px',
+            borderRadius: '10px',
+            fontSize: '14px',
+            fontWeight: '600',
+            textDecoration: 'none',
+            transition: 'background-color 0.2s ease, transform 0.2s ease',
+          }}>
+            Book a Free Call
+          </Link>
         </div>
       </section>
 
@@ -401,9 +387,6 @@ export default function OurWorkPage() {
 
       <style>{`
         @media (max-width: 768px) {
-          .stats-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-          }
           .projects-grid {
             grid-template-columns: 1fr !important;
           }

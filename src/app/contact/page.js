@@ -528,6 +528,12 @@ export default function ContactPage() {
                   icon: '✉',
                 },
                 {
+                  label: 'WHATSAPP US',
+                  value: '7082167660, 9416748873, 9927345853',
+                  href: 'https://wa.me/917082167660',
+                  icon: '📞',
+                },
+                {
                   label: 'LinkedIn',
                   value: 'ARR Automation',
                   href: 'https://linkedin.com',

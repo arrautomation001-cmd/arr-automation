@@ -255,7 +255,7 @@ export default function Process() {
               Book a free 30-minute call. No pitch, just clarity.
             </p>
           </div>
-          <a href="/contact" style={{
+          <a href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
             backgroundColor: '#C8844A',
             color: '#FDF8F2',
             padding: '14px 28px',

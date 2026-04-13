@@ -190,7 +190,7 @@ export default function ServicesPage() {
             >
               See Pricing →
             </Link>
-            <Link href="/contact" style={{
+            <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
               backgroundColor: 'transparent',
               color: '#FDF8F2',
               padding: '13px 28px',
@@ -354,7 +354,7 @@ export default function ServicesPage() {
                 >
                   See Pricing →
                 </Link>
-                <Link href="/contact" style={{
+                <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
                   backgroundColor: 'transparent',
                   color: '#3D1F1A',
                   padding: '12px 24px',
@@ -494,7 +494,7 @@ export default function ServicesPage() {
             Book a free 30-minute call. We will look at your startup
             and tell you exactly which service you need first.
           </p>
-          <Link href="/contact" style={{
+          <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
             display: 'inline-block',
             backgroundColor: '#C8844A',
             color: '#FDF8F2',

@@ -169,7 +169,7 @@ export default function Hero() {
             animate="show"
             style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}
           >
-            <Link href="/contact" style={{
+            <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
               backgroundColor: '#C8844A',
               color: '#FDF8F2',
               padding: '14px 28px',
@@ -217,50 +217,6 @@ export default function Hero() {
             </Link>
           </motion.div>
 
-          {/* Social proof strip */}
-          <motion.div
-            custom={4}
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            style={{
-              marginTop: '48px',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '16px',
-            }}
-          >
-            <div style={{ display: 'flex' }}>
-              {['A', 'B', 'C', 'D'].map((l, i) => (
-                <div key={l} style={{
-                  width: '36px',
-                  height: '36px',
-                  borderRadius: '50%',
-                  backgroundColor: i % 2 === 0 ? '#C8844A' : '#A0622E',
-                  border: '2px solid #FDF8F2',
-                  marginLeft: i === 0 ? 0 : '-10px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '13px',
-                  fontWeight: '600',
-                  color: '#FDF8F2',
-                }}>
-                  {l}
-                </div>
-              ))}
-            </div>
-            <div>
-              <div style={{ display: 'flex', gap: '2px', marginBottom: '2px' }}>
-                {[1,2,3,4,5].map(s => (
-                  <span key={s} style={{ color: '#C8844A', fontSize: '14px' }}>★</span>
-                ))}
-              </div>
-              <p style={{ fontSize: '13px', color: '#6b5a52', margin: 0 }}>
-                Trusted by startups in IN · US · AU
-              </p>
-            </div>
-          </motion.div>
         </div>
 
         {/* Right — visual card */}

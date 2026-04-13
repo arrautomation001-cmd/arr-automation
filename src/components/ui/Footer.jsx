@@ -13,11 +13,10 @@ const links = {
   Company: [
     { label: 'About Us', href: '/about' },
     { label: 'Our Work', href: '/work' },
-    { label: 'Blog', href: '/blog' },
     { label: 'Contact', href: '/contact' },
   ],
   Connect: [
-    { label: 'Book a Free Call', href: '/contact' },
+    { label: 'Book a Free Call', href: 'https://calendly.com/arrautomation001/30min' },
     { label: 'LinkedIn', href: 'https://linkedin.com' },
     { label: 'Twitter / X', href: 'https://twitter.com' },
     { label: 'hello@arrautomation.com', href: 'mailto:hello@arrautomation.com' },
@@ -121,6 +120,8 @@ export default function Footer() {
                   <li key={item.label}>
                     <Link
                       href={item.href}
+                      target={item.label === 'Book a Free Call' ? '_blank' : undefined}
+                      rel={item.label === 'Book a Free Call' ? 'noopener noreferrer' : undefined}
                       style={{
                         fontSize: '14px',
                         color: 'rgba(253,248,242,0.55)',

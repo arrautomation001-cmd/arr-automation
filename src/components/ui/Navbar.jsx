@@ -47,7 +47,7 @@ export default function Navbar() {
           gap: '32px',
           alignItems: 'center',
         }} className="desktop-nav">
-          {['Services', 'Pricing', 'Our Work', 'Blog'].map((item) => (
+          {['Services', 'Pricing', 'Our Work'].map((item) => (
             <Link
               key={item}
               href={`/${item.toLowerCase().replace(/ /g, '-')}`}
@@ -58,7 +58,7 @@ export default function Navbar() {
               {item}
             </Link>
           ))}
-          <Link href="/contact" style={{
+          <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
             backgroundColor: '#C8844A',
             color: '#FDF8F2',
             padding: '10px 22px',
@@ -129,7 +129,7 @@ export default function Navbar() {
               flexDirection: 'column',
               gap: '16px',
             }}>
-              {['Services', 'Our Work', 'Blog'].map((item) => (
+              {['Services', 'Our Work'].map((item) => (
                 <Link
                   key={item}
                   href={`/${item.toLowerCase().replace(' ', '-')}`}
@@ -139,7 +139,7 @@ export default function Navbar() {
                   {item}
                 </Link>
               ))}
-              <Link href="/contact" style={{
+              <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
                 backgroundColor: '#C8844A',
                 color: '#FDF8F2',
                 padding: '10px 22px',

@@ -202,7 +202,7 @@ const plans = [
 ]
 
 export default function PricingPage() {
-  const [currency, setCurrency] = useState('USD')
+  const [currency, setCurrency] = useState('INR')
   const [activeService, setActiveService] = useState(0)
 
   const formatPrice = (usd) => {
@@ -497,7 +497,7 @@ export default function PricingPage() {
                 </ul>
 
                 {/* CTA */}
-                <Link href="/contact" style={{
+                <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
                   display: 'block',
                   textAlign: 'center',
                   backgroundColor: tier.highlighted ? '#C8844A' : '#3D1F1A',
@@ -546,7 +546,7 @@ export default function PricingPage() {
             understand exactly what you need, and recommend the right plan —
             or build you a custom one.
           </p>
-          <Link href="/contact" style={{
+          <Link href="https://calendly.com/arrautomation001/30min" target="_blank" rel="noopener noreferrer" style={{
             display: 'inline-block',
             backgroundColor: '#C8844A',
             color: '#FDF8F2',
